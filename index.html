@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background: rgb(128, 57, 241);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin-top: 50px;
+    }
+
+    form input {
+      height: 35px;
+      width: 250px;
+      border-radius: 5px;
+      outline: none;
+      border: 0;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    input[type="submit"],
+    button {
+      margin-top: 25px;
+      background: #069;
+      color: #fff;
+      border: none;
+      width: 280px;
+    }
+
+    button {
+      width: 200px;
+      height: 30px;
+      margin-top: 0;
+      margin-left: 25px;
+      border-radius: 4px;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+      background: rgb(1, 64, 95);
+    }
+
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      color: #fff;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <input type="text" id="inputTodo" autocomplete="off">
+    <input type="submit" value="Cadastrar tarefa">
+  </form>
+  <ul>
+
+  </ul>
+  <script src="./index.js"></script>
+</body>
+
+</html>
